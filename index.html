@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>KH portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+      #navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #a81818;
+        font-family: 'montserrat', sans-serif;
+        color: white;
+        align-items: center;
+        height: 3em;
+        position: fixed;
+        width: 100%;
+        top: 0;
+      }
+      #main-nav-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 55em;
+      }
+      nav>div>a{
+        text-decoration: none;
+        color: white;
+      }
+      nav>div>a:hover{
+        font-style: italic;
+      }
+      .nav-logo{
+        font-family: 'Dancing Script', cursive;
+        font-size: 2.1em;
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+      }
+      .body{
+        margin: 0%;
+        background-color: black;
+      }
+      #welcome-section{
+        height: 100vh;
+      }
+
+      .welcome-container{
+        color: white;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: auto auto auto;
+        margin-top: 5em;
+        font-family: 'montserrat', sans-serif;
+      }
+      .welcome-header{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: left;
+        align-self: center;
+        color: #a81818;
+        font-size: 3em;
+        margin-left: 8.2em;
+        margin-top: 3em;
+
+      }
+      .welcome-subcopy{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: left;
+        align-self: center;
+        margin-left: 25em;
+        line-height: 3em;
+        margin-top: -4em;
+      }
+      .welcome-image{
+        grid-column: 2/3;
+        grid-row: 1/4;
+        justify-self: center;
+        align-self: center;
+        width: 30em;
+        height: 28em;
+        margin-top: 12em;
+        margin-right: 10em;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: #a81818;
+      }
+      .link{
+        margin-left: 25em;
+        margin-top: -1em;
+      }
+      .github-link{
+        color: #a81818;
+      }
+      .github-link:hover{
+        font-style: italic;
+      }
+      .projects-container{
+        font-size: 1.1em;
+        color: white;
+        display: grid;
+        grid-template-columns: 33vw 33vw 33vw;
+        font-family: 'montserrat', sans-serif;
+        justify-items: center;
+        align-items: center;
+        background-color: #696969;
+        height: 100%;
+      }
+      .project-tile{
+        grid-column: 1/2;
+        margin: 10em 0em 10em 0em;
+        border-style: solid;
+        width: 20em;
+        height: 30em;
+        text-align: center;
+        background-color: #a81818;
+        border-color: #a81818;
+        border-radius: 4%;
+      }
+      .project-tile-two{
+        grid-column: 2/3;
+        margin: 10em 0em 10em 0em;
+        border-style: solid;
+        width: 20em;
+        height: 30em;
+        text-align: center;
+        background-color: #a81818;
+        border-color: #a81818;
+        border-radius: 4%;
+      }
+      .project-tile-three{
+        grid-column: 3/4;
+        margin: 10em 0em 10em 0em;
+        border-style: solid;
+        width: 20em;
+        height: 30em;
+        text-align: center;
+        background-color: #a81818;
+        border-color: #a81818;
+        border-radius: 4%;
+      }
+      .contact-container{
+        display: flex;
+        flex-direction: row;
+        height: 12em;
+        width: 100vw;
+        color: white;
+        font-family: 'montserrat', sans-serif;
+        justify-content: space-around;
+        align-content: center;
+        margin-top: 8em;
+      }
+      .twitter-image{
+        height: 3em;
+        width: 3.5em;
+      }
+      .facebook-image {
+        height: 3em;
+        width: 3em;
+      }
+      .github-image{
+        height: 3em;
+        width: 3em;
+      }
+      .email-image{
+        height: 3em;
+        width: 3em;
+        color: white;
+      }
+      .references{
+        margin-left: 0.5em;
+        padding-bottom: 1em;
+        text-decoration: none;
+        color: white;
+        font-family: 'montserrat', sans-serif;
+        font-size: 0.8em;
+      }
+      @media only screen and (max-width: 1056px) {
+
+        .nav-logo {
+          font-size: 1em;
+        }
+      }
+      @media only screen and (max-width: 1543px) {
+          .welcome-container {
+            font-size: 90%;
+          }
+      }
+      @media only screen and (max-width: 1236px) {
+          .welcome-container{
+            font-size: 80%;
+          }
+      }
+      @media only screen and (max-width: 1066px) {
+          .welcome-container{
+            font-size: 70%;
+          }
+          .welcome-header{
+            padding-bottom: 20px;
+            margin-left: 3em;
+          }
+          .welcome-image{
+            width: 25em;
+            height: 23em;
+          }
+          .welcome-subcopy{
+            margin-left: 9.1em;
+          }
+          .link{
+            margin-left: 9.1em;
+          }
+      }
+      @media only screen and (max-width: 784px) {
+          .welcome-image{
+            width: 15em;
+            height: 13em;
+          }
+      }
+    </style>
+
+  </head>
+
+  <body class="body">
+<!-- header section -->
+    <header>
+      <nav id="navbar">
+        <div id="main-nav-item">
+          <a href="#welcome-section">About Me</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Get in touch</a>
+        </div>
+          <p class="nav-logo">Klinz dev</p>
+      </nav>
+    </header>
+<!-- "Welcome" section - below nav -->
+    <main>
+      <section id="welcome-section">
+        <div class="welcome-container">
+          <h1 class="welcome-header">Who am I?</h1>
+          <p class="welcome-subcopy">
+            Hey! thanks for stopping by. No, i'm not the robot, but I can only imagine how much code is needed to make one work. That's why i'm trying to learn so when Robot's take over the world I might stand a chance.</p><br/>
+            <p class="link">My name's Klinz - <a id=profile-link class="github-link" href="https://github.com/klinz95" target="_blank">Come say hi</a> - or see some of my projects below.</p>
+          <img class="welcome-image" src="images/coding.jpg" alt="laptop"/>
+        </div>
+      </section>
+<!-- "Project" section - below welcome -->
+      <section id="projects">
+        <div class="projects-container">
+            <div class="project-tile">
+              <h1>Placeholder 1</h1>
+            </div>
+            <div class="project-tile-two">
+              <h1>Placeholder 2</h1>
+            </div>
+            <div class="project-tile-three">
+              <h1>Placeholder 3</h1>
+            </div>
+        </div>
+      </section>
+<!-- "Contact" section - below project -->
+      <footer>
+      <section id="contact">
+        <div class="contact-container">
+          <a href="https://twitter.com/klinz95"><img class="twitter-image" src="images/twitter-logo.png" alt="twitter"/></a>
+          <a href="https://facebook.com/kieran.hope1"><img class="facebook-image" src="images/f-logo.png" alt="facebook"/></a>
+          <a href="https://github.com/klinz95"><img class="github-image" src="images/GitHub-Mark-Light-64px.png" alt="github"/></a>
+          <a href="mailto:klinz@protonmail.com"><img class="email-image" src="https://img.icons8.com/pastel-glyph/64/ffffff/email--v3.png" alt="email"></a>
+        </div>
+      </section>
+      <a class="references" href="https://icons8.com/">Icons8</a><br/>
+      <a class ="references" href="https://icons8.com/icon/8126/email">Email icon by Icons8</a>
+      </footer>
+    </main>
+  </body>
+</html>
