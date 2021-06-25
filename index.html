@@ -105,22 +105,24 @@
         font-style: italic;
       }
       .projects-container{
-        font-size: 1.1em;
+        font-size: 1.4em;
         color: white;
         display: grid;
-        grid-template-columns: 33vw 33vw 33vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20vw 20vw;
         font-family: 'montserrat', sans-serif;
         justify-items: center;
         align-items: center;
         background-color: #696969;
-        height: 100%;
+        width: 100vw;
+
       }
       .project-tile{
         grid-column: 1/2;
-        margin: 10em 0em 10em 0em;
+        grid-row: 1/2;
         border-style: solid;
-        width: 20em;
-        height: 30em;
+        width: 15em;
+        height: 15em;
         text-align: center;
         background-color: #a81818;
         border-color: #a81818;
@@ -128,10 +130,10 @@
       }
       .project-tile-two{
         grid-column: 2/3;
-        margin: 10em 0em 10em 0em;
+        grid-row: 1/2;
         border-style: solid;
-        width: 20em;
-        height: 30em;
+        width: 15em;
+        height: 15em;
         text-align: center;
         background-color: #a81818;
         border-color: #a81818;
@@ -139,10 +141,43 @@
       }
       .project-tile-three{
         grid-column: 3/4;
-        margin: 10em 0em 10em 0em;
+        grid-row: 1/2;
         border-style: solid;
-        width: 20em;
-        height: 30em;
+        width: 15em;
+        height: 15em;
+        text-align: center;
+        background-color: #a81818;
+        border-color: #a81818;
+        border-radius: 4%;
+      }
+      .project-tile-four{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-style: solid;
+        width: 15em;
+        height: 15em;
+        text-align: center;
+        background-color: #a81818;
+        border-color: #a81818;
+        border-radius: 4%;
+      }
+      .project-tile-five{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        border-style: solid;
+        width: 15em;
+        height: 15em;
+        text-align: center;
+        background-color: #a81818;
+        border-color: #a81818;
+        border-radius: 4%;
+      }
+      .project-tile-six{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        border-style: solid;
+        width: 15em;
+        height: 15em;
         text-align: center;
         background-color: #a81818;
         border-color: #a81818;
@@ -265,6 +300,15 @@
             </div>
             <div class="project-tile-three">
               <h1>Placeholder 3</h1>
+            </div>
+            <div class="project-tile-four">
+              <h1>Placeholder 4</h1>
+            </div>
+            <div class="project-tile-five">
+              <h1>Placeholder 5</h1>
+            </div>
+            <div class="project-tile-six">
+              <h1>Placeholder 6</h1>
             </div>
         </div>
       </section>
